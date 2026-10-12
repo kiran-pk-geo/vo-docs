@@ -8,4 +8,7 @@
 - [DB Sync](services/db-sync)
 - [Geo Crons](services/geo-crons)
 
-- **Features**
+- **Features**- [Alerts](features/alerts)
+- [Operator Dashboard](features/operator-dashboard)
+- [Route Approval](features/route-approval)
+
