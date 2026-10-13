@@ -1,0 +1,25 @@
+---
+title: VO Platform Docs
+description: Functional documentation for the Voyage Optimization platform
+template: splash
+hero:
+  title: VO Platform Docs
+  tagline: Functional documentation for the Voyage Optimization platform — auto-updated on every merge to production.
+  actions:
+    - text: Browse Services
+      link: /vo-docs/services/api/
+      icon: right-arrow
+      variant: primary
+    - text: Browse Features
+      link: /vo-docs/features/alerts/
+      icon: right-arrow
+---
+
+| Service | What it does |
+|---|---|
+| [API](/vo-docs/services/api) | REST layer, auth, voyage/vessel/port CRUD, Kafka producer |
+| [Web](/vo-docs/services/web) | React UI, map rendering, route management |
+| [Route Generation](/vo-docs/services/route-generation) | ABB/DTN WebSocket calls, route optimisation logic |
+| [PDF Consumer](/vo-docs/services/pdf-consumer) | Voyage/master PDF rendering, email delivery |
+| [DB Sync](/vo-docs/services/db-sync) | GeoPerform MSSQL → VO MariaDB sync |
+| [Geo Crons](/vo-docs/services/geo-crons) | Scheduled jobs — Kpler positions, DTN port refresh |
