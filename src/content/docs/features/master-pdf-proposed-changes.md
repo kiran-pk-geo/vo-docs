@@ -1,4 +1,6 @@
-# Master PDF CRs — Waypoint Filtering & Table Structure
+---
+title: Master PDF CRs — Waypoint Filtering & Table Structure
+---
 
 ## What it does
 
