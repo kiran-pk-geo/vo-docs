@@ -7,12 +7,12 @@ title: Api
 - Manages and fires configurable alerts (Route Deviation, Stoppage, Conditional Area entry) when vessels meet defined conditions
 - Integrates with Kpler to provide real-time vessel position data, with caching and resilience logic to handle burst traffic
 - Enforces access control on vessel groups, hiding alerts when a user loses access to a vessel group
-- Supports per-zone alert configuration, including enabling or disabling alerts at the zone level
+- Supports per-zone alert configuration and master PDF generation with waypoint filtering and weather data
 
 ## Inputs
 - AIS vessel position updates used to evaluate alert conditions and populate alert messages
 - Kpler API providing latest vessel positions, refreshed proactively ahead of high-traffic windows
-- Client requests for vessel routing, alert configuration, and fleet data
+- Client requests for vessel routing, alert configuration, fleet data, and master PDF generation
 - Conditional Area and Route Deviation rule definitions configured by users or operators
 - Fleet keys and user/vessel-group access permissions from the authorization layer
 
@@ -20,7 +20,7 @@ title: Api
 - Alert events (email notifications, in-app alerts) triggered by vessel behavior such as route deviation or zone entry
 - Cached and proxied Kpler vessel position data served to downstream consumers
 - Alert messages with AIS position details, DMS-formatted coordinates, and human-readable wording
-- Responses to API clients with voyage optimization data including routing and fleet status
+- Master PDF documents with filtered waypoints and weather row data for voyage reporting
 - Suppressed or hidden alerts when vessel-group access is revoked
 
 ## External dependencies
@@ -31,6 +31,7 @@ title: Api
 - Voyage optimization rules engine for evaluating Conditional Area and Route Deviation conditions
 
 ## Recent changes
+- 2026-10-13: feat(master-pdf): waypoint filtering and weather rows update (VO-1444)
 - 2026-10-13: fix(docs): retry Jira API on failure, trim token to handle base64 newlines (VO-1451)
 - 2026-10-13: fix(alerts): update alert notification timing for CA events (VO-1451)
 - 2026-10-13: fix(docs): add missing stripFences definition, clean up code fence handling (VO-1205)
