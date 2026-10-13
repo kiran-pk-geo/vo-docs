@@ -31,6 +31,7 @@ title: Api
 - Voyage optimization rules engine for evaluating Conditional Area and Route Deviation conditions
 
 ## Recent changes
+- 2026-10-13: testing VO-1233
 - 2026-10-13: refactor(docs): rewrite agent with strict fill-in templates, inline repair (VO-1444)
 - 2026-10-13: feat(master-pdf): waypoint filtering and weather rows update (VO-1444)
 - 2026-10-13: fix(docs): retry Jira API on failure, trim token to handle base64 newlines (VO-1451)
