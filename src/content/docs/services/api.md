@@ -31,6 +31,7 @@ title: Api
 - Voyage optimization rules engine for evaluating Conditional Area and Route Deviation conditions
 
 ## Recent changes
+- 2026-10-13: fix(alerts): update alert notification timing for CA events (VO-1451)
 - 2026-10-13: fix(docs): add missing stripFences definition, clean up code fence handling (VO-1205)
 - 2026-10-13: fix(docs): strip outer code fences from Claude responses before writing to vo-docs
 - 2026-10-13: feat(docs): auto-update docs agent with Jira ticket extraction and CI auto mode (VO-1205)
