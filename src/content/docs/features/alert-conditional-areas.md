@@ -1,4 +1,3 @@
-```
 ---
 title: Alert 3 - Conditional Areas
 ---
@@ -34,4 +33,3 @@ Monitors vessels on approved, active voyages and generates alerts whenever a ves
 - **DMS coordinate conversion fix** — corrected a bug where a zero-valued latitude or longitude component was silently dropped during conversion to degrees/minutes/seconds format
 - **email payload forwarded** — `ui_message` and `event_type` fields are now correctly propagated through to the alert email payload
 - **initial Conditional Area alert backend** — foundational implementation of the point-in-polygon check, crossing detection, and alert generation pipeline
-```
